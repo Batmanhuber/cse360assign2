@@ -4,8 +4,16 @@ package cse360assign2;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		Calculator myCalculator = new Calculator ();
+		myCalculator.subtract(2);
+		myCalculator.add(4);
+		
+		myCalculator.multiply(2);
+		myCalculator.add(5);
+		myCalculator.divide(10);
+		int tot = myCalculator.getTotal();
+		System.out.println("Total = " + tot);
+		System.out.println(myCalculator.getHistory());
 	}
 
 }
