@@ -17,27 +17,31 @@ public class Calculator {
 		
 		// returns final value after calculation
 		public int getTotal () {
-			return 0;
+			return total;
 		}
 		
 		// adds and integer to total value
 		public void add (int value) {
-			
+			total += value;
 		}
 		
 		// subtracts and integer from total value
 		public void subtract (int value) {
-			
+			total -= value;
 		}
 		
 		// multiplies the total by an integer
 		public void multiply (int value) {
-			
+			total *= value;
 		}
 		
 		// divides the total by an integer
 		public void divide (int value) {
 			
+			if(value == 0)
+				total = 0;
+			else
+				total /= value;
 		}
 		
 		// gives the history of calculations in the form of a string
