@@ -10,12 +10,11 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		myCalculator.add(sc.nextInt());
 		myCalculator.add(sc.nextInt());
-		
+		myCalculator.add(sc.nextInt());
 		int tot = myCalculator.getTotal();
 		System.out.println("Total = " + tot);
 		System.out.println(myCalculator.getHistory());
 		
 		sc.close();
 	}
-
 }
